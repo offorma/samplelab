@@ -6,6 +6,7 @@ body{
 #logo{
     float:left;
     color: #fff;
+    font-size: large;
     padding: 25px;
     margin: 10px 5px 0px 10px;
     background-color: cornflowerblue;
