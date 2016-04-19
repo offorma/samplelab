@@ -12,4 +12,5 @@ body{
 }
 .outline{
     border: dashed;
+    margin-top: 10px;
 }
