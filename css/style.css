@@ -9,6 +9,7 @@ body{
     padding: 25px;
     margin: 10px 5px 0px 10px;
     background-color: cornflowerblue;
+    border-radius: 10px;
 }
 .outline{
     border: dashed;
