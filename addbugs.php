@@ -22,6 +22,8 @@ if(isset($_POST['submit'])){
         if($result){
             $_SESSION['message']= "insert is was successful";
             header('Location: addbugss.php');
+        }else{
+            echo"query failed".mysqli_error($result);
         }
     }
 }
