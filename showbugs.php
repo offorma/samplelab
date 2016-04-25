@@ -50,6 +50,7 @@ if($result){
                     <p><h4>Bug Category: </h4>".$row['bugcategory']."</p>
                     <p> <h4>Bug Summary: </h4>".$row['bugsummary']."</p>
                 </div><hr>
+                    </div>
           "  ;
         }
     }
@@ -59,7 +60,7 @@ else{
 }
 ?>
 
-    </div>
+
 
 </div>
 <div class="container">
