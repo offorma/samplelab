@@ -46,9 +46,9 @@ if($result){
 
              <div class'row'>
                 <div>
-                    <p>".$row['bugname']."</p>
-                    <p>".$row['bucategory']."</p>
-                    <p>".$row['bugsummary']."</p>
+                    <p> <h4>Bug Name: </h4>".$row['bugname']."</p>
+                    <p><h4>Bug Category: </h4>".$row['bugcategory']."</p>
+                    <p> <h4>Bug Summary: </h4>".$row['bugsummary']."</p>
                 </div><hr>
           "  ;
         }
