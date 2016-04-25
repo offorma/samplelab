@@ -27,13 +27,20 @@
                     <li><a href="bugs.html">Android Bugs</a></li>
                     <li><a href="bugs.html">iOS Bugs</a></li>
                     <li><a href="bugs.html">Windows Bugs</a></li>
-                    <li><a href="addbugs.html">insert Bugs</a></li>
+                    <li><a href="addbugss.php">insert Bugs</a></li>
                 </ul>
             </nav>
 
         </div>
         <div class="col-lg-9 outline">
-            <form action="">
+            <form action="addbugs.php" method="post">
+                <div class="form-group">
+                    <?php
+                    if(isset($_SESSION['message'])){
+                        echo "{$_SESSION['message']}";
+                    }
+                    ?>
+                </div>
                 <div class="form-group">
                     <label for="bugname">Bug Name</label>
                     <input class="form-control" type="text" name="bugname" placeholder="Enter Bug Name">
@@ -44,7 +51,7 @@
                 </div>
                 <div class="form-group">
                     <label for="bugcategory">Bug Category</label>
-                    <select class="form-control"  name="bugcategpry">
+                    <select class="form-control"  name="bugcategory">
                         <option>Android</option>
                         <option>iOS</option>
                         <option>Windows</option>
