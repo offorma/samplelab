@@ -23,7 +23,7 @@
         <div class="col-lg-3 outline">
             <nav>
                 <ul>
-                    <li><a href="showbugs.html">All Bugs</a></li>
+                    <li><a href="showbugs.php">All Bugs</a></li>
                     <li><a href="bugs.html">Android Bugs</a></li>
                     <li><a href="bugs.html">iOS Bugs</a></li>
                     <li><a href="bugs.html">Windows Bugs</a></li>
