@@ -1,3 +1,5 @@
+<?php include ('server.php');?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +33,7 @@
                 </ul>
             </nav>
 <?php
-include ('server.php');
+
 $sql ="SELECT bugname bugsummary bugcategory FROM bugs";
 $result = mysqli_query($conn,$sql);
 if($result){
