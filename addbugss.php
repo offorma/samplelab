@@ -37,7 +37,7 @@
                 <div class="form-group">
                     <?php
                     if(isset($_SESSION['message'])){
-                        echo "<h2>".$_SESSION['message']."</h2>";
+                        echo "<h2>".$_SESSION["message"]."</h2>";
                     }
                     ?>
                 </div>
