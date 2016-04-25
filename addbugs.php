@@ -19,7 +19,7 @@ if(isset($_POST['submit'])){
 
         $sql = "INSERT INTO bugs (bugname,bugsummary,bugcategory)VALUES('$bugname','$bugsummary','$bugcategory')";
         $result = mysqli_query($conn,$sql);
-        if(result){
+        if($result){
             $_SESSION['message']= "insert is was successful";
             header('Location: addbugss.php');
         }
