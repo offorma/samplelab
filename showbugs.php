@@ -32,6 +32,7 @@
                     <li><a href="addbugss.php">insert Bugs</a></li>
                 </ul>
             </nav>
+            </div>
             <div class='col-lg-9 outline'>
 
 <?php
