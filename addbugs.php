@@ -17,13 +17,13 @@ if(isset($_POST['submit'])){
         $bugsummary = $_POST['bugsummary'];
         $bugcategory = $_POST['bugcategory'];
 
-        $sql = "INSERT INTO bugs (bugname,bugsummary,bugcategory)VALUES('$bugname','$bugsummary','$bugcategory')";
+        $sql = "INSERT INTO bugs (bugname,bugsummary,bugcategory) VALUES('$bugname','$bugsummary','$bugcategory')";
         $result = mysqli_query($conn,$sql);
         if($result){
             $_SESSION['message']= "insert is was successful";
             header('Location: addbugss.php');
         }else{
-            die("query failed".mysqli_error($result));
+            die("query failed".mysqli_error($conn));
         }
     }
 }
