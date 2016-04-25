@@ -32,6 +32,8 @@
                     <li><a href="addbugss.php">insert Bugs</a></li>
                 </ul>
             </nav>
+            <div class='col-lg-9 outline'>
+
 <?php
 
 $sql ="SELECT bugname bugsummary bugcategory FROM bugs";
@@ -41,8 +43,7 @@ if($result){
         while($row = mysqli_fetch_assoc($result)){
           echo"
 
-          <div class='col-lg-9 outline'>
-            <div class'row'>
+             <div class'row'>
                 <div>
                     <p>{$row['bugname']}</p>
                     <p>{$row['bucategory']}</p>
