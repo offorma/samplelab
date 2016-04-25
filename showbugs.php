@@ -23,24 +23,37 @@
         <div class="col-lg-3 outline">
             <nav>
                 <ul>
-                    <li><a href="showbugs.php">All Bugs</a></li>
+                    <li><a href="showbugs.html">All Bugs</a></li>
                     <li><a href="bugs.html">Android Bugs</a></li>
                     <li><a href="bugs.html">iOS Bugs</a></li>
                     <li><a href="bugs.html">Windows Bugs</a></li>
                     <li><a href="addbugss.php">insert Bugs</a></li>
                 </ul>
             </nav>
+<?php
+include ('server.php');
+$sql ="SELECT bugname bugsummary bugcategory FROM bugs";
+$result = mysqli_query($conn,$sql);
+if($result){
+    if(mysqli_num_rows($result)>0){
+        while($row = mysqli_fetch_assoc($result)){
+          echo"
 
-        </div>
-        <div class="col-lg-9 outline">
-            <p>sfdkjlfsjlkfjfks sjdslkds dsjd jd dj; djkd
-                jundjf;ldf;dnf df;;dnfoidnf fiodkdsn;a dfnf f f;sda ;df jdnfdf jas d
-                sfdkjlfsjlkfjfks sjdslkds dsjd jd dj; djkd
-                jundjf;ldf;dnf df;;dnfoidnf fiodkdsn;a dfnf f f;sda ;df jdnfdf jas
-                sfdkjlfsjlkfjfks sjdslkds dsjd jd dj; djkd
-                jundjf;ldf;dnf df;;dnfoidnf fiodkdsn;a dfnf f f;sda ;df jdnfdf jas
-            </p>
-        </div>
+          <div class='col-lg-9 outline'>
+            <div class'row'>
+                <div>
+                    <p>{$row['bugname']}</p>
+                    <p>{$row['bucategory']}</p>
+                    <p>{$row['bugsummary']}</p>
+                </div><hr>
+          "  ;
+        }
+    }
+}
+else{
+    die("query failed".mysqli_error($conn));
+}
+?>
 
     </div>
 
