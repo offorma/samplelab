@@ -37,7 +37,7 @@
 
 <?php
 
-$sql ="SELECT bugname bugsummary bugcategory FROM bugs";
+$sql ="SELECT bugname, bugsummary, bugcategory FROM bugs";
 $result = mysqli_query($conn,$sql);
 if($result){
     if(mysqli_num_rows($result)>0){
