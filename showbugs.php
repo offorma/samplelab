@@ -55,7 +55,7 @@ if($result){
     }
 }
 else{
-    die("query failed".mysqli_error($conn));
+    echo "query failed".mysqli_error($conn);
 }
 ?>
 
